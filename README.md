@@ -1,4 +1,42 @@
-# Bienvenido al test de Angular de ADOCLIC
+# Test ADOCLIC por Lorenzo Spallione
+
+Este proyecto fue desarrollado en Angular 17, conteniendo un formulario de ingreso y una sección con un listado de productos. Se realizaron pruebas unitarias para los componentes, servicios e interceptores.
+
+## Demo
+
+Puedes visualizar el proyecto deployado en el siguiente enlace:
+https://adoclictest.web.app/login
+
+## Requisitos
+
+Asegúrate de tener instaladas las siguientes herramientas antes de comenzar:
+
+- Angular CLI: ^17.0.0
+- Node.js: ^20.11.0
+
+## Instalación
+
+1. Clona el repositorio:
+  ```bash
+  git clone https://github.com/tu-usuario/tu-proyecto.git
+  ```
+
+2. Navega al directorio del proyecto:
+  ```bash
+  cd prueba_angular_2
+  ```
+
+3. Instala las dependencias:
+  ```bash
+  npm install
+  ```
+4. Ejecutar las pruebas unitarias:
+  ```bash
+  ng test
+  ```
+
+
+# Descripción del test solicitado
 
 ## Desafío
 
