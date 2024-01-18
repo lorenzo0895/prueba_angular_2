@@ -16,9 +16,6 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(
       BrowserAnimationsModule,
       provideFirebaseApp(() => initializeApp(environment.firebase)),
-      // provideAuth(() => getAuth()),
-      // provideFirestore(() => getFirestore()),
-      // provideStorage(() => getStorage())
     ),
     provideHttpClient(withInterceptors([fakeInterceptor])),
   ],
