@@ -1,0 +1,15 @@
+<div class="window">
+  @if (false) {
+    <mat-progress-bar mode="indeterminate"/>
+  }
+  <div class="main-div">
+    <main>
+      <div
+        style="position: relative"
+        [@fadeAnimation]="outlet.isActivated ? outlet.activatedRoute : ''"
+      >
+        <router-outlet #outlet="outlet"></router-outlet>
+      </div>
+    </main>
+  </div>
+</div>

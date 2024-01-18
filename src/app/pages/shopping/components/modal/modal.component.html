@@ -1,0 +1,26 @@
+<div class="details-modal">
+  <div class="details-modal__header">
+    <h2>{{data.title}}</h2>
+    <button class="details-modal__header--close" mat-raised-button color="green" (click)="_activeModal.close()">X</button>
+  </div>
+
+  <hr>
+  
+  <div class="details-modal__image">
+    <div class="details-modal__image__container">
+      @if (data.image) {
+        <img #img (error)="replaceUrl(img)" [ngSrc]="data.image" alt="product-img" fill>
+      }
+    </div>
+    <div class="details-modal__image__caption">
+      <p class="details-modal__image__caption--el1">{{data.category}}</p>
+      <p class="details-modal__image__caption--el2">{{data.description}}</p>
+    </div>
+  </div>
+
+  
+  <div class="details-modal__price">
+    <span>Price</span>
+    <span class="details-modal__price--value">{{data.price | currency}}</span>
+  </div>
+</div>

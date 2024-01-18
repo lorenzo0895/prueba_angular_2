@@ -1,0 +1,63 @@
+@use 'src/assets/scss/variables.scss' as *;
+
+$table-border-radius: 5px;
+
+.shopping {
+  min-height: 90vh;
+  min-width: 90vw;
+  margin: 0 auto;
+  padding: 2.5rem;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__filter {
+    border: $border;
+    height: 4rem;
+    max-width: 600px;
+    border-radius: $table-border-radius;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__table {
+    th {
+      border-top: $border;
+      &:first-child {
+        border-top-left-radius: $table-border-radius;
+        border-left: $border;
+      }
+      &:last-child {
+        border-top-right-radius: $table-border-radius;
+        border-right: $border;
+      }
+    }
+    td {
+      &:first-child {
+        border-left: $border;
+      }
+      &:last-child {
+        border-right: $border;
+      }
+    }
+    tr:last-child {
+      td {
+        border-bottom: $border;
+        &:first-child {
+          border-bottom-left-radius: $table-border-radius;
+        }
+        &:last-child {
+          border-bottom-right-radius: $table-border-radius;
+        }
+      }
+    }
+    .cdk-header-row, .cdk-row {
+      height: 3rem;
+    }
+    .mat-column-actions {
+      width: 105px;
+    }
+  }
+}
